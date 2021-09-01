@@ -1,25 +1,31 @@
+import "./board.css";
 
-import './style.css';
-
-function Board({ title, category, time, money, user, imageLink }) {
-  return (
-    <div className="board">
-      <div className="picture">
-        <img alt={title} src={imageLink} />
-      </div>
-      <div className="contents">
-        <div className="title">{title}</div>
-        <div className="category-time">
-          <div className="category">{category}</div>
-          <div className="time">{time}</div>
+const Board = ({key,
+    title,
+    time,
+    category,
+    user,
+    price,
+    imgLink,
+    setBoardData}) => {
+    return (
+        <div className="template" onClick={setBoardData}>
+            <div className="picture">
+                <img alt={title} src={imgLink} />
+            </div>
+            <div className="contents">
+                <div className="title">{title}</div>
+                <div className="category-time">
+                    <div className="category">{category}</div>
+                    <div className="time">{time}초 전</div>
+                </div>
+                <div className="price-user">
+                    <div className="price">{price}원</div>
+                    <div className="user">{user}</div>
+                </div>
+            </div>
         </div>
-        <div className="money-user">
-          <div className="money">{money}</div>
-          <div className="user">{user}</div>
-        </div>
-      </div>
-    </div>
-  );
+    )
 }
 
 export default Board;
