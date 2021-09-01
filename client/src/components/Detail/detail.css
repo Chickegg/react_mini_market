@@ -1,0 +1,6 @@
+.detail-template {
+    background-color: aqua;
+    display: flex;
+    position: relative;
+    top: 100px;
+}

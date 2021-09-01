@@ -1,0 +1,26 @@
+.detail-content {
+    background-color: orange;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.content-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.content-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.buttons button {
+    margin: 0 30px;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+
+    background-color: greenyellow;
+}
