@@ -1,0 +1,10 @@
+.write-button {
+    display: flex;
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+    padding: 30px 30px;
+    border: 2px solid orangered;
+    border-radius: 35px;
+    background-color: orangered;
+}
